@@ -1,0 +1,29 @@
+.header {
+
+    &--container {
+        // position: fixed;
+        width: 100%;
+        padding: 45px 0;
+        @extend %container;
+       }
+
+    &--menu {
+        @extend %flex;
+    }
+
+    &--list {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 530px/1265px * 100% ;
+    }
+
+    &--link {
+        transition: .5s;
+
+        &:hover {
+            color: $lightMainColor;
+
+        }
+    }
+}

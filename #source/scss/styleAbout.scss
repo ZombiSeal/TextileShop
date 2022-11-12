@@ -1,0 +1,107 @@
+.about {
+    
+    .linkButtom{
+        @extend %buttomHover;
+    }
+
+    &--first {
+        @extend %container;
+        @extend %padding;
+
+    }
+
+    &--first{
+        &--info {
+            margin: 0 auto;
+            text-align: center;
+            width: 790px/$containerWidth * 100%;
+
+            p {
+                margin-bottom: 20px;
+            }
+
+
+        }
+
+        .shortInfo {
+            @extend %flex;
+            margin-top: 50px;
+    
+            &--first, 
+            &--second, 
+            &--third {
+
+                div {
+                    background-color: $lightMainColor;
+                    padding: 25px;
+                    color: $lightFontColor;
+    
+                    a {
+                        color: $lightFontColor;
+                        font-size: 18px;
+                        transition: .5s;
+    
+                        &:hover {
+                            color: $darkMainColor;
+                        }
+                    }
+                }
+            }
+        }
+    
+    }
+
+    &--second {
+        background-color: $lightMainColor;
+        @extend %padding;
+        
+        &--container {
+            @extend %container;
+            @extend %flex;
+            justify-content: center;
+        }
+
+        &--info {
+            width: 440px/$containerWidth * 100%;
+            padding: 125px 60px;
+        }
+
+    }
+
+    &--third {
+
+        @extend %padding;
+
+        &--container {
+            @extend %container;
+
+            .information {
+                @extend %flex;
+
+                div{
+                    width: 45%;
+
+                    p {
+                        margin-bottom: 10px;
+                    }
+
+                    div {
+                        margin-top: 20px;
+                    }
+                }
+
+                img {
+                    @extend %imgBorder;
+                }
+            }
+            
+            .line {
+                width: 100%;
+                height: 1px;
+                margin: 40px 0;
+                background-color: $lightMainColor;
+            }
+        }
+    }
+    
+}

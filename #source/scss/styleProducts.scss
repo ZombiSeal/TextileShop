@@ -1,0 +1,27 @@
+.products--second {
+    &--container {
+        @extend %container;
+        @extend %padding;
+    }
+
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 70px;
+
+
+        &--item {
+            text-align: center;
+
+            img {
+                margin-bottom: 10px;
+            }
+
+            span {
+                font-family: $linkFont;
+                font-size: 16px;
+                color: #B0B0B0;
+            }
+        }
+    }
+}
